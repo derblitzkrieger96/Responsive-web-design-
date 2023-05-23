@@ -1,0 +1,193 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Albert Einstein</h1>
+      <p class="title-description">The man who revolutioned physics forever</p>
+      <figure id="img-div">
+        <img
+          src="https://imagenes.muyinteresante.es/files/vertical_composte_image/uploads/2022/10/14/63492f08385a4.jpeg"
+          alt=""
+          id="image"
+        />
+        <figcaption id="img-caption">
+          Albert Einstein moments before officially announcing his Full
+          Relativity theory
+        </figcaption>
+      </figure>
+      <section id="facts">
+        <ul>
+          <li>
+            <strong>1915</strong> Publishes the general theory of relativity,
+            providing a new understanding of gravity and proposing the concept
+            of spacetime curvature.
+          </li>
+
+          <li>
+            <strong>1919</strong> Experimental confirmation of general
+            relativity during a solar eclipse, validating Einstein's predictions
+            about light bending around massive objects.
+          </li>
+          <li>
+            <strong>1921</strong> Awarded the Nobel Prize in Physics for his
+            explanation of the photoelectric effect, which contributed to the
+            development of quantum mechanics.
+          </li>
+          <li>
+            <strong>1922</strong> Proposes the concept of stimulated emission,
+            which forms the basis of the development of lasers.
+          </li>
+          <li>
+            <strong>1933</strong> Leaves Germany due to the rise of the Nazi
+            regime and settles in the United States as a professor at the
+            Institute for Advanced Study in Princeton.
+          </li>
+          <li>
+            <strong>1939</strong> Signs a letter to President Franklin D.
+            Roosevelt, urging research into atomic energy and warning about the
+            potential development of atomic weapons.
+          </li>
+          <li>
+            <strong>1940</strong> Becomes a U.S. citizen, maintaining his
+            position at the Institute for Advanced Study.
+          </li>
+          <li>
+            <strong>1945</strong> Witnesses the detonation of the first atomic
+            bomb during the Manhattan Project, expressing concern about the
+            destructive power of nuclear weapons.
+          </li>
+          <li>
+            <strong>1952</strong> Offered the presidency of the newly formed
+            state of Israel, which he declines.
+          </li>
+          <li>
+            <strong>1955</strong> Passes away on April 18 at the age of 76 in
+            Princeton, leaving behind a remarkable legacy in physics and
+            scientific inquiry.
+          </li>
+          <li>
+            <strong>1979</strong> Einstein's brain is studied by scientists
+            after being preserved following his death, leading to insights about
+            the structure and organization of his brain.
+          </li>
+          <li>
+            <strong>1999</strong> Time magazine names Albert Einstein the
+            "Person of the Century" for his contributions to science and his
+            influence on our understanding of the universe.
+          </li>
+          <li>
+            <strong>2015</strong> The LIGO (Laser Interferometer
+            Gravitational-Wave Observatory) detects gravitational waves,
+            providing direct evidence for Einstein's general theory of
+            relativity.
+          </li>
+          <li>
+            <strong>2016</strong> Einstein's prediction of gravitational waves
+            is confirmed with the discovery of gravitational waves originating
+            from the merger of two black holes.
+          </li>
+          <li>
+            <strong>2019</strong> Celebrations worldwide mark the 100th
+            anniversary of the confirmation of general relativity and the
+            eclipse measurements that made Einstein a scientific celebrity.
+          </li>
+          <i>
+            "Albert Einstein, the brilliant physicist and thinker,
+            revolutionized our understanding of the universe. His theories of
+            relativity reshaped the fundamental concepts of space, time, and
+            gravity. Einstein's intellectual curiosity, coupled with his
+            unwavering pursuit of knowledge, left an indelible mark on science
+            and continues to inspire generations, reminding us to question,
+            explore, and imagine beyond the boundaries of conventional wisdom." </i
+          ><br />
+          <i>-- unknown artist</i>
+        </ul>
+      </section>
+      <p id="tribute-info">
+        In your freetime you can read more details about this brilliant
+        scientist in his
+
+        <a
+          href="https://en.wikipedia.org/wiki/Albert_Einstein"
+          target="_blank"
+          id="tribute-link"
+          >Wikipedia page</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  font-family: Tahoma, sans-serif;
+}
+main {
+  margin: 2rem 0.2rem;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: -3rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+figure {
+  background-color: white;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  width: 96%;
+  border-radius: 4px;
+}
+figcaption {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  width: 600px;
+  display: block;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+p {
+  /* text-align: center;
+  margin: 0 auto;
+  display: block; */
+  text-align: center;
+}
+
+ul {
+  width: 500px;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+li {
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+
+** end of undefined **
+

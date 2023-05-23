@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header><h1>Django Documentation</h1></header>
+        <div><a href="#introduction" class="nav-link">Introduction</a></div>
+        <div><a href="#django_models" class="nav-link">Django Models</a></div>
+        <div><a href="#django_views" class="nav-link">Django Views</a></div>
+        <div><a href="#django_forms" class="nav-link">Django Forms</a></div>
+        <div>
+          <a href="#django_templates" class="nav-link">Django Templates</a>
+        </div>
+        <div>
+          <a href="#django_authentication" class="nav-link"
+            >Django Authentication</a
+          >
+        </div>
+      </nav>
+      <div class="sections">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <p>
+            Django is a high-level web framework written in Python that enables
+            developers to build web applications quickly and efficiently. It
+            follows the Model-View-Controller (MVC) architectural pattern,
+            emphasizing the reusability and modularity of components. With
+            Django, you can focus on writing your application's logic rather
+            than dealing with repetitive tasks. It provides a robust set of
+            tools, libraries, and features that simplify the development
+            process, allowing you to create scalable and maintainable web
+            applications. Key features of Django include:
+          </p>
+          <ul>
+            <li>
+              Object-Relational Mapping (ORM): Django provides a powerful ORM
+              that allows you to interact with the database using Python
+              objects. This simplifies database operations and reduces the need
+              for writing complex SQL queries.
+            </li>
+            <li>
+              URL routing: Django's URL routing system helps map URLs to
+              appropriate views or controllers, making it easy to define the
+              structure of your application's URLs.
+            </li>
+            <li>
+              Template Engine: Django's template engine enables you to build
+              dynamic web pages by separating the HTML code from the Python
+              code. This promotes code reusability and simplifies the
+              presentation logic.
+            </li>
+            <li>
+              Authentication and Authorization: Django provides built-in
+              authentication and authorization mechanisms, including user
+              registration, login, and password management. This ensures secure
+              access control to your web application.
+            </li>
+            <li>
+              Admin Interface: Django's admin interface is automatically
+              generated based on your models, providing a ready-to-use
+              administrative dashboard to manage your application's data.
+            </li>
+            <li>
+              Forms Handling: Django simplifies form handling by providing form
+              validation, data binding, and error handling. It includes
+              pre-built form widgets and validators to streamline the form
+              creation process.
+            </li>
+            <li>
+              Security: Django incorporates various security measures by
+              default, including protection against common web vulnerabilities
+              like cross-site scripting (XSS), cross-site request forgery
+              (CSRF), and SQL injection.
+            </li>
+            <li>
+              Scalability: Django's architecture allows you to scale your
+              application easily. It supports handling high traffic and
+              integrates well with caching systems, load balancers, and other
+              tools for performance optimization.
+            </li>
+            <li>
+              Django has a vibrant community and extensive documentation, making
+              it easy to find resources, tutorials, and third-party packages to
+              enhance your development experience.
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="django_models">
+          <header>Django Models</header>
+          <p>
+            Django models are Python classes that represent the structure and
+            behavior of data in your web application.
+          </p>
+          <p>
+            To define a model, you create a subclass of the
+            django.db.models.Model class and specify the fields and their types.
+          </p>
+          <code class="language-python">
+            <span>class YourModel(models.Model):</span><br />
+            <span class="indented-one">
+              field1 = models.CharField(max_length=100) </span
+            ><br />
+            <span class="indented-one"> field2 = models.IntegerField() </span
+            ><br />
+            <span class="indented-one"> field3 = models.DateTimeField()</span>
+          </code>
+
+          <p>
+            Each model class corresponds to a database table, and the fields of
+            the model define the columns in the table.
+          </p>
+          <p>
+            Django provides various field types, such as CharField,
+            IntegerField, DateField, ForeignKey, etc., to represent different
+            types of data in your models.
+          </p>
+          <code class="language-python">
+            <span>from django.db import models </span><br />
+            <span> class YourModel(models.Model):</span><br />
+            <span class="indented-one">
+              name = models.CharField(max_length=100)</span
+            ><br />
+            <span class="indented-one"> age = models.IntegerField()</span><br />
+            <span class="indented-one"> birth_date = models.DateField() </span
+            ><br />
+            <span class="indented-one">
+              related_model = models.ForeignKey(OtherModel,
+              on_delete=models.CASCADE)
+            </span>
+          </code>
+
+          <p>
+            Models can have relationships with other models, such as one-to-one,
+            one-to-many, or many-to-many relationships. These relationships are
+            defined using special fields like ForeignKeyandManyToManyField.
+          </p>
+          <p>
+            Django models have built-in methods and attributes that allow you to
+            interact with the data, perform queries, create, update, and delete
+            records.
+          </p>
+          <code>
+            <span> class YourModel(models.Model):</span><br />
+            <span class="indented-one"> # Fields and their types go here</span
+            ><br /><br />
+
+            <span class="indented-one"> def some_method(self):</span><br />
+            <span class="indented-two"> # Custom method implementation</span
+            ><br /><br />
+
+            <span class="indented-one"> def save(self, *args, **kwargs):</span
+            ><br />
+            <span class="indented-two">
+              # Custom save method implementation </span
+            ><br />
+            <span class="indented-two"> super().save(*args, **kwargs)</span
+            ><br /><br />
+
+            <span class="indented-one"> @classmethod</span><br />
+            <span class="indented-one"> def some_query(cls):</span><br />
+            <span class="indented-two">
+              # Custom query method implementation</span
+            ><br />
+            <span class="indented-two"> return cls.objects.filter(...)</span
+            ><br />
+          </code>
+          <p>
+            Model fields can have various attributes, such as null, blank,
+            default, choices, etc., which control the behavior and validation of
+            the data.
+          </p>
+          <code>
+            <span> from django.db import models </span><br /><br />
+
+            <span> class YourModel(models.Model):</span><br />
+            <span class="indented-one">
+              your_field = models.CharField(max_length=100,<br />
+              <span class="indented-three"> null=True, blank=True,</span><br />
+              <span class="indented-three"> default='Default Value', </span
+              ><br />
+              <span class="indented-three">
+                choices=[('option1', 'Option 1'),</span
+              ><br />
+              <span class="indented-three">
+                ('option2', 'Option 2')])
+              </span> </span
+            ><br /><br />
+            <span class="indented-one">
+              # Other fields and model methods...</span
+            >
+          </code>
+          <p>
+            You can define model methods to encapsulate business logic related
+            to the data stored in the model. These methods can perform
+            calculations, data transformations, or any other operations specific
+            to the model.
+          </p>
+
+          <p>
+            Django provides a powerful ORM (Object-Relational Mapping) that
+            abstracts the database operations and allows you to work with the
+            models using Python code instead of writing raw SQL queries.
+          </p>
+          <p>
+            By using Django's migrations, you can create, update, and manage
+            database schema changes over time as your models evolve.
+          </p>
+          <code>
+            <span> from django.db import models</span><br /><br />
+            <span> class YourModel(models.Model):</span><br />
+            <span class="indented-one">
+              your_field = models.CharField(max_length=100)</span
+            ><br /><br />
+
+            <span class="indented-one">
+              # Other fields and model methods...</span
+            ><br /><br />
+
+            <span>
+              # Run the following command in the terminal to create
+              migrations:</span
+            ><br />
+            <span> # python manage.py makemigrations</span><br /><br />
+
+            <span>
+              # Run the following command in the terminal to apply migrations
+              and update the database schema:</span
+            ><br />
+            <span> # python manage.py migrate</span>
+          </code>
+        </section>
+        <section class="main-section" id="django_views">
+          <header>Django Views</header>
+        </section>
+        <section class="main-section" id="django_forms">
+          <header>Django Forms</header>
+        </section>
+        <section class="main-section" id="django_templates">
+          <header>Django Templates</header>
+        </section>
+        <section class="main-section" id="django_authentication">
+          <header>Django Authentication</header>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

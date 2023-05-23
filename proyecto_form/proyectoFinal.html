@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tell us what can we improve</h1>
+      <p id="description">
+        In this form you can type any suggestion you want in order to users have
+        a better experience
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <fieldset class="personal-info">
+          <label for="name" id="name-label"
+            >Enter your name:
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Type your name here"
+          /></label>
+          <label for="email" id="email-label"
+            >Enter your email:
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your@email.com"
+          /></label>
+          <label for="number" id="number-label"
+            >Enter your number:
+            <input
+              type="number"
+              id="number"
+              required
+              min="0"
+              max="10"
+              placeholder="Enter a number [0-10]"
+          /></label>
+        </fieldset>
+        <fieldset class="another-info">
+          <div for="dropdown">
+            <p>Where did you here from us?</p>
+            <select name="dropdown" id="dropdown">
+              <option value="">(select one choice)</option>
+              <option value="1">Facebook</option>
+              <option value="2">Instagram</option>
+              <option value="3">LinkedIn</option>
+            </select>
+          </div>
+          <div for="gender">
+            <p>Choose your gender</p>
+            <label for="male"
+              ><input type="radio" name="gender" id="male" value="male" />
+              Male</label
+            >
+            <label for="female"
+              ><input type="radio" name="gender" id="female" value="male" />
+              Female</label
+            >
+          </div>
+          <div for="personalInterests">
+            <p>Tell us your personal interests:</p>
+            <label for="music"
+              ><input
+                type="checkbox"
+                name="personalInterests"
+                id="music"
+                value="music"
+              />
+              Music
+            </label>
+            <label for="origami">
+              <input
+                type="checkbox"
+                name="personalInterests"
+                id="origami"
+                value="origami"
+              />
+              Origami
+            </label>
+            <label for="coding">
+              <input
+                type="checkbox"
+                name="personalInterests"
+                id="coding"
+                value="coding"
+              />
+              Coding
+            </label>
+            <label for="weightlifting">
+              <input
+                type="checkbox"
+                name="personalInterests"
+                id="weightlifting"
+                value="coding"
+              />
+              weightlifting
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback">
+          <label for="feedback">
+            <p>Give us your feedback</p>
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

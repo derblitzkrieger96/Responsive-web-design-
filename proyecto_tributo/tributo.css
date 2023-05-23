@@ -1,0 +1,55 @@
+* {
+  font-family: Tahoma, sans-serif;
+}
+main {
+  margin: 2rem 0.2rem;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: -3rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+figure {
+  background-color: white;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  width: 96%;
+  border-radius: 4px;
+}
+figcaption {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  width: 600px;
+  display: block;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+p {
+  /* text-align: center;
+  margin: 0 auto;
+  display: block; */
+  text-align: center;
+}
+
+ul {
+  width: 500px;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+li {
+  margin: 2rem auto;
+  max-width: 80%;
+}

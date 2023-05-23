@@ -1,0 +1,111 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tell us what can we improve</h1>
+      <p id="description">In this form you can type any suggestion you want in order to users have a better experience</p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label"
+          >Enter your name:
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Type your name here"
+        /></label>
+        <label for="email" id="email-label"
+          >Enter your email:
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="your@email.com"
+        /></label>
+        <label for="number" id="number-label"
+          >Enter your number:
+          <input
+            type="number"
+            id="number"
+            required
+            min="0"
+            max="10"
+            placeholder="Enter a number [0-10]"
+        /></label>
+        <label for="dropdown"
+          >Where did you here from us?
+          <select name="dropdown" id="dropdown">
+            <option value="">(select one choice)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Instagram</option>
+            <option value="3">LinkedIn</option>
+          </select>
+        </label>
+        <label for="gender">
+          Choose your gender
+          <input type="radio" name="gender" id="gender" value="male"/> Male
+          <input type="radio" name="gender" id="gender" value="female"/> Female
+        </label>
+        <label for="personalInterests">
+          <input
+            type="checkbox"
+            name="personalInterests"
+            id="music"
+            value="music"
+          />
+          Music
+          <input
+            type="checkbox"
+            name="personalInterests"
+            id="origami"
+            value="origami"
+          />
+          Origami
+          <input
+            type="checkbox"
+            name="personalInterests"
+            id="coding"
+            value="coding"
+          />
+          Coding
+          <input
+            type="checkbox"
+            name="personalInterests"
+            id="weightlifting"
+            value="coding"
+          />
+          weightlifting
+        </label>
+        Give us your feedback
+        <label for="feedback">
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
