@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/portafolio/styles.css" />
     <script
       src="https://kit.fontawesome.com/1cd167b8ab.js"
       crossorigin="anonymous"
@@ -14,22 +14,26 @@
   <body>
     <header class="header">
       <nav id="navbar">
-        <span>Dairon Danilo Dorado</span>
+        <span><a href="#">Dairon Danilo Dorado</a></span>
         <ul>
           <li><a href="#welcome-section"> About me</a></li>
           <li><a href="#skills"> Skills</a></li>
-          <li><a href=""> Projets</a></li>
+          <li><a href="#projects"> Projets</a></li>
           <li><a href=""> Contact</a></li>
         </ul>
       </nav>
       <div class="navbar-contact">
         <div>
           <i class="fa-solid fa-square-envelope"></i>
-          <span>ddanilodorado@gmail.com</span>
+          <span
+            ><a href="mailto:ddanilodorado@gmail.com "
+              >ddanilodorado@gmail.com
+            </a>
+          </span>
         </div>
         <div>
           <i class="fa-solid fa-phone"></i>
-          <span>3164571093</span>
+          <span><a href="tel:3164571093">3164571093</a></span>
         </div>
       </div>
     </header>
@@ -120,9 +124,83 @@
         </div>
       </section>
       <section id="projects">
-        <div class="projects-tile"></div>
+        <div class="projects-tile">
+          <h2>Projects</h2>
+          <ul>
+            <div class="project">
+              <h3 class="project-title">RoboShare</h3>
+              <li class="project-description">
+                The project titled "RoboShare" is a web-based platform that
+                offers cutting-edge bidirectional robot rentals. The platform
+                provides flexible rental options, advanced technology, seamless
+                integration with existing workflows, and expert support. It aims
+                to unlock the future of robotics by allowing users to access and
+                utilize a wide range of bidirectional robots tailored to their
+                specific needs and budget.
+              </li>
+            </div>
+
+            <div class="project">
+              <h3 class="project-title">Django Documentation</h3>
+              <li class="project-description">
+                This project is a documentation website for Django, a high-level
+                web framework written in Python. It provides information about
+                various aspects of Django, including its introduction, models,
+                views, forms, templates, and authentication.
+              </li>
+            </div>
+            <div class="project">
+              <h3 class="project-title">Tribute page</h3>
+              <li class="project-description">
+                This HTML project is a tribute page dedicated to Albert
+                Einstein, one of the most influential physicists in history. The
+                page provides a brief overview of Einstein's life and
+                achievements.
+              </li>
+            </div>
+            <div class="project">
+              <h3 class="project-title">Form page</h3>
+              <li class="project-description">
+                The "Feedback Form" project is a web-based form designed to
+                collect user feedback and suggestions to improve user
+                experience. The form consists of multiple sections, including
+                personal information, additional information, and feedback.
+                achievements.
+              </li>
+            </div>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <h2>Let's work together</h2>
+      <p>Follow me</p>
+      <div class="socialmedia-icons">
+        <a
+          href="https://web.facebook.com/dairon.doradocastillo"
+          class="fa fa-facebook icon-footer"
+          target="_blank"
+        ></a>
+        <a href="#" class="fa fa-twitter icon-footer"></a>
+        <a
+          href="https://www.instagram.com/derblitzkrieger/"
+          class="fa fa-instagram icon-footer"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.youtube.com/@daironpg4165"
+          class="fa fa-youtube icon-footer"
+          target="_blank"
+        ></a>
+        <a
+          href="https://github.com/derblitzkrieger96"
+          class="fa fa-github icon-footer"
+          target="_blank"
+        ></a>
+      </div>
+
+      <p>Copyright &copy; Dairon Danilo Dorado</p>
+      <button>Contact us</button>
+    </footer>
   </body>
 </html>
