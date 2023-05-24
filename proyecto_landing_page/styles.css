@@ -476,7 +476,7 @@ figcaption {
 
 @media (max-width: 586px) {
   html {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
   .btn-mobile-nav {
     display: block;
