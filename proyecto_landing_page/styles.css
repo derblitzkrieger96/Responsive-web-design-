@@ -403,12 +403,19 @@ figcaption {
   border: none;
   border-radius: 9px;
   width: 8rem;
+
+  font-size: 1.2rem;
   color: #082f49;
   background-color: #e0f2fe;
-  font-size: 1.2rem;
 }
 
-.footer button:hover {
+.footer button:active,
+.footer button:focus {
+  color: #082f49;
+  background-color: #e0f2fe;
+}
+.footer button:hover,
+.footer button:visited {
   background-color: #0c4a6e;
   color: #e0f2fe;
   border: 1px solid #e0f2fe;
