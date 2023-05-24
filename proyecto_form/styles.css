@@ -2,16 +2,19 @@ html,
 body {
   overflow-x: hidden;
 }
+h1 {
+  line-height: 2.2rem;
+}
 h1,
 header p {
   text-align: center;
-  margin: auto auto;
+  margin: 1rem auto;
   max-width: 90%;
 }
 body {
   font-family: Tahoma;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: #dcfce7;
   color: #15803d;
 }
@@ -118,7 +121,13 @@ div {
 }
 
 @media (max-width: 507px) {
+  body {
+    font-size: 1rem;
+  }
   form {
     padding: 1rem;
+  }
+  h1 {
+    line-height: 2rem;
   }
 }

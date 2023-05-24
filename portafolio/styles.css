@@ -84,6 +84,7 @@ html {
   height: 3rem;
   border: none;
   background: none;
+  padding-top: 0.5rem;
   display: none;
 }
 
