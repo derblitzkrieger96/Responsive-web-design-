@@ -424,6 +424,9 @@ figcaption {
 
 .socialmedia-icons {
   height: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
 }
 .icon-footer {
   color: #e0f2fe;
